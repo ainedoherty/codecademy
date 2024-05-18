@@ -1,0 +1,79 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Add space between projects */
+    padding: 1rem;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #8FBC8F;
+    color: black;
+    border-radius: 10px 10px 0px 0px;
+    padding-top: 5px;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header p {
+    margin: 0px;
+}
+
+.main-portfolio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio {
+    flex: 1; 
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.portfolio:last-child {
+    margin-right: 0;
+}
+
+.main-portfolio .portfolio img {
+    width: 100%; /* Set the width to 100% */
+    height: calc(55% - 10px); /* Set the height to one third of the div minus the margin */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+    border-radius: 5px 5px 0 0; /* Apply border-radius only to the top corners */
+    border-bottom: 1px solid black;
+}
+
+.port1, .port2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.port-paragraph {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+h3 {
+    margin: 0;
+}
+
+.port-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.port-text p {
+    margin-right: 20px;
+}
+
+.port-text p:last-child {
+    margin-right: 0;
+}
